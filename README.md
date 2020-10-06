@@ -24,3 +24,13 @@ Latent Dirichlet allocation (LDA) was used in the project to generate the topics
   </tr>
 </table>
 <br>
+
+The text file has a few fields that are good candidates for topic modeling. The following content have been tried for LDA modeling:
+* The full text file
+* Chief Complaint
+* History of Present Illness
+* Discharge Diagnosis
+
+Observations: 
+* Grid search generated the optimal number of topics being 10. It does not seem to be enough topics to cover the complexity of the data, even though it is algorithmically optimal. 
+* In addition, when using the topic keywords are very unspecific. Probably due to the many non-relevant words in a large body of text
