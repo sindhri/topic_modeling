@@ -33,4 +33,16 @@ The text file has a few fields that are good candidates for topic modeling. The 
 
 Observations: 
 * Grid search generated the optimal number of topics being 10. It does not seem to be enough topics to cover the complexity of the data, even though it is algorithmically optimal. 
-* In addition, when using the topic keywords are very unspecific. Probably due to the many non-relevant words in a large body of text
+* In addition there are problems when using the content of each field
+* When using either the full text file, or history of present illness, the topic keywords are very unspecific. Probably due to the many non-relevant words in a large body of text
+* When using chief complaint, the words are a lot of times only symptoms (such as fever, chest pain), but not the underlying conditions (infection, myocardio infarction).
+* When using discharge diagnosis, there are many secondary diagnosis that shadowed the main underlying condiiton.
+
+Based on the observation, I extracted first diagnosis from discharge diagnosis. It in some cases are the same as chief complaints, and in other cases are the names of the underlying conditions. Since diagnosis is blank for some patients, I substitute it with chief complaints, then service (if it is not medicine). I also tried to substitude it with addendum, but addendum was too long compaired to other first diagnosis, chief complaint and service.
+
+I experimented with setting the number of topics = 20, 30, 40. 
+* 20 topics, there is heavy overlap of conditions in each topic
+* 30 topics, the overlap is better.
+* 40 topics, some topics does not really have any meaning at more
+Thus 30 was chosen as the number of topics for the main model.
+
