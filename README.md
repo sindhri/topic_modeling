@@ -1,5 +1,5 @@
-# Topic Modeling, from EMR to underlying problem
-This project uses information from electronic medical record (EMR) to generate a prediction of the underlying problem of the patients
+# Topic Modeling, from EMR to underlying conditions
+This project uses information from electronic medical record (EMR) to generate a prediction of the underlying conditions of the patients
 Latent Dirichlet allocation (LDA) was used in the project to generate the topics
 
 * Input: For every patient there is a text file (.txt) with fields extracted from EMR, as well as an annotation file (.ann) with name entities extracted from the text file.  
