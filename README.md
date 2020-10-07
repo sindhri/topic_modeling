@@ -46,24 +46,32 @@ I experimented with setting the number of topics = 20, 30, 40.
 * 30 topics, the overlap was better. The distribution of topics between documents were a lot more balanced.
 * 40 topics, some topics did not really have any meaning at more. Some topics only had a couple files. 
 Thus 30 was chosen as the number of topics for the main model.
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img5.jpg" width = "200">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img6.jpg" width = "200">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img7.jpg" width = "200">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img5.png" width = "500">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img6.png" width = "500">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img7.png" width = "500">
 
 ## 2. Data overview
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img1.jpg" width = "500">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img2.jpg" width = "900">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img3.jpg" width = "900">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img4.jpg" width = "900">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img1.png" width = "600">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img2.png" width = "1200">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img3.png" width = "1200">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img4.png" width = "1200">
 
 Screenshots from the wonderful LDA model. It has so much information! (Note, the number of the circle does not corresponde to the topic number)
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img8.jpg" width = "500">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img9.jpg" width = "500">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img10.jpg" width = "500">
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img11.jpg" width = "500">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img8.png" width = "900">
+<br>
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img9.png" width = "900">
+<br>
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img10.png" width = "900">
+<br>
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img11.png" width = "900">
 
 Keywords from the 30-topic model
-<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img12.jpg" width = "500">
+<br>
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img12.png" width = "900">
+<br>
+label_candidate and the predicted topic side by side! (first 15)
+<br>
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img13.png" width = "900">
 
 ## Afterthoughts
 Within a contrained amount of time, I did extensive research on topic modeling, LDA, embedding, deep learning NLP. I concluded that for topic modeling per se, which is to find out what was mentioned most, the bag-of-word approach by LDA was sufficient. It was especially true when no prior labels were given, and LDA was good for label discovery.
