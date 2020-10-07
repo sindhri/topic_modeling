@@ -39,7 +39,7 @@ Observations:
 * When using chief complaint, the words were a lot of times only symptoms (such as fever, chest pain), but not the underlying conditions (infection, myocardio infarction).
 * When using discharge diagnosis, there were many secondary diagnosis that shadowed the main underlying condiiton.
 
-Based on the observation, I extracted first diagnosis from discharge diagnosis. It in some cases were the same as chief complaints, and in other cases were the names of the underlying conditions. Since diagnosis was blank for some patients, I substituted it with chief complaints, then service (if it is not medicine). I also tried to substitude it with addendum, but addendum was too long compaired to other first diagnosis, chief complaint and service.
+Based on the observation, I extracted first diagnosis from discharge diagnosis. It in some cases were the same as chief complaints, and in other cases were the names of the underlying conditions. Since diagnosis was blank for some patients, I substituted it with chief complaints, then service (if it is not medicine). I also tried to substitude it with addendum, but addendum was too long compaired to other first diagnosis, chief complaint and service. This way I generated a target for modeling: label_candidate
 
 I experimented with setting the number of topics = 20, 30, 40. 
 * 20 topics, there was heavy overlap of conditions in each topic. Many documents fell in topic 0.
@@ -50,7 +50,7 @@ Thus 30 was chosen as the number of topics for the main model.
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img6.png" width = "500">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img7.png" width = "500">
 
-## 2. Data overview
+## 2. Data overview of label_candidate
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img1.png" width = "600">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img2.png" width = "1200">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img3.png" width = "1200">
