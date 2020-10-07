@@ -3,7 +3,7 @@ This project uses information from electronic medical record (EMR) to generate a
 Latent Dirichlet allocation (LDA) was used in the project to generate the topics
 
 * Input: For every patient there is a text file (.txt) with fields extracted from EMR, as well as an annotation file (.ann) with name entities extracted from the text file.  
-* Output: The program generates a csv file that listed the dominant topic and keywords from the topic for each patient.  
+* Output: The program generates a csv file that listed the dominant topic and keywords from the topic for each patient. 
 
 <table>
   <tr>
@@ -46,8 +46,24 @@ I experimented with setting the number of topics = 20, 30, 40.
 * 30 topics, the overlap was better. The distribution of topics between documents were a lot more balanced.
 * 40 topics, some topics did not really have any meaning at more. Some topics only had a couple files. 
 Thus 30 was chosen as the number of topics for the main model.
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img5.jpg" width = "200">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img6.jpg" width = "200">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img7.jpg" width = "200">
 
 ## 2. Data overview
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img1.jpg" width = "500">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img2.jpg" width = "900">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img3.jpg" width = "900">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img4.jpg" width = "900">
+
+Screenshots from the wonderful LDA model. It has so much information! (Note, the number of the circle does not corresponde to the topic number)
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img8.jpg" width = "500">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img9.jpg" width = "500">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img10.jpg" width = "500">
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img11.jpg" width = "500">
+
+Keywords from the 30-topic model
+<img src = "https://github.com/sindhri/topic_modeling/blob/master/img/img12.jpg" width = "500">
 
 ## Afterthoughts
 Within a contrained amount of time, I did extensive research on topic modeling, LDA, embedding, deep learning NLP. I concluded that for topic modeling per se, which is to find out what was mentioned most, the bag-of-word approach by LDA was sufficient. It was especially true when no prior labels were given, and LDA was good for label discovery.
@@ -62,4 +78,7 @@ I originally thought five days were enough time because the models would take mu
 * I feel there are a lot of complex underlying condition in the 303 cases, and if there are 30 or more topics, 303 case is simply insufficient to automatically generate them. If this is the only data we have, I would recommend mannual label the data based on chief complaint and diagnosis. Then run classification models using the labels. LDA and NMF can be used for the classification. In addition, random forest, k-nearest neighbor will work too afer word embedding. Deep learning CNN and LSTM can be used as well.
 * Word embedding is a very interesting field that I didn't have time to get in. (I spent the time, but couldn't figure out how to make it work with LDA which can only count words). There are general word embedding such as GoogleNews-vectors-negative300.bin and glove.6B. There are also more specific resource built in the medical space. 
 * sparkNLP has a clinical module which is worth looking into.
-
+* The models can be saved. Right now it generates a quite different model every time. I think it has a lot to do with predicting 30 topics with only 303 instances. When the number of topics decrease, the models were more stable, but way too much overlap between topics. 
+* the code can be further cleaned up and optimized if for final production. 
+* There are quite a few typos in the big body of text. Could try to correct them.
+* From the description there is age information. (There was also sex information, not sure whether it was the real sex or a mocked up field.) But age could be extracted for help with the modeling. 
