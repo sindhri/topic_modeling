@@ -89,4 +89,4 @@ I originally thought five days were enough time because the models would take mu
 * The models can be saved. Right now it generates a quite different model every time. I think it has a lot to do with predicting 30 topics with only 303 instances. When the number of topics decrease, the models were more stable, but way too much overlap between topics. 
 * the code can be further cleaned up and optimized if for final production. 
 * There are quite a few typos in the big body of text. Could try to correct them.
-* From the description there is age information. (There was also sex information, not sure whether it was the real sex or a mocked up field.) But age could be extracted for help with the modeling. 
+* From the description there is age information. (There was also sex information, not sure whether it was the real sex or a mocked up field.) But age could be extracted for helping with the modeling. 
