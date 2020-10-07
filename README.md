@@ -56,7 +56,7 @@ Thus 30 was chosen as the number of topics for the main model.
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img3.png" width = "1200">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img4.png" width = "1200">
 
-Screenshots from the wonderful LDA model. It has so much information! (Note, the number of the circle does not corresponde to the topic number)
+Screenshots from the wonderful LDA panel. It has so much information! (Note, the number of the circle does not corresponde to the topic number)
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img8.png" width = "900">
 <br>
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img9.png" width = "900">
