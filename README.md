@@ -50,12 +50,27 @@ Thus 30 was chosen as the number of topics for the main model.
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img6.png" width = "500">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img7.png" width = "500">
 
-## 2. Data overview of label_candidate
+## 2. Steps:
+* import the files
+* extract specific fields
+* clean the text (remove punctuation, lemmatization) 
+  * I did not do stemming because it tends to remove too much information
+  * Even for lemmatization it changed 'left' to 'leave' so there were some funny word combinations
+* Exam the text
+* Data vectorization, experimented with different parameters
+* Apply LDA to the vectorized data, grid search on parameters. 
+* Apply LDA on different sections of the text files and evaluate the model performance.
+* Generated a new column that is composed of first diagnosis and chief compliant as the data for modeling
+* Not happy with the grid search results, so manually set the number of parameters and chose the one that looked more optimal than others.
+* Clean up the code and 'deploy' the model (made 'main.py' and 'helpers.py')
+
+## 3. Data overview of label_candidate
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img1.png" width = "600">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img2.png" width = "1200">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img3.png" width = "1200">
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img4.png" width = "1200">
 
+## 4. Predicted model! (one instance)
 Screenshots from the wonderful LDA panel. It has so much information! (Note, the number of the circle does not corresponde to the topic number)
 <img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img8.png" width = "900">
 <br>
