@@ -20,7 +20,7 @@ Latent Dirichlet allocation (LDA) was used in the project to generate the topics
   </tr>
   <tr>
     <td>topic_modeling_explore.ipynb</td>
-    <td>Stepwise exploritary analysis to discover the data, EDA, and find the best parameters</td>
+    <td>Stepwise exploratory analysis to discover the data, EDA, and find the best parameters</td>
   </tr>
 </table>
 <br>
