@@ -33,7 +33,7 @@ The text files have a few fields that are good candidates for topic modeling. Th
 * Discharge Diagnosis
 
 Observations: 
-* Grid search generated the optimal number of topics being 10. It does not seem to be enough topics to cover the complexity of the data, even though it is algorithmically optimal. 
+* Grid search determined the optimal number of topics being 10. It did not seem to be enough topics to cover the complexity of the data, even though it was algorithmically optimal. 
 * In addition there are problems when using the content of each field:
 * When using either the full text file, or history of present illness, the topic keywords were very unspecific. Probably due to the many non-relevant words in a large body of text
 * When using chief complaint, the words were a lot of times only symptoms (such as fever, chest pain), but not the underlying conditions (infection, myocardio infarction).
