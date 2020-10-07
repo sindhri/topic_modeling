@@ -90,3 +90,4 @@ I originally thought five days were enough time because the models would take mu
 * the code can be further cleaned up and optimized if for final production. 
 * There are quite a few typos in the big body of text. Could try to correct them.
 * From the description there is age information. (There was also sex information, not sure whether it was the real sex or a mocked up field.) But age could be extracted for helping with the modeling. 
+* Right now I'm only outputting the most dominant topic. It's possible that multiple topics could be equally important for a given document
