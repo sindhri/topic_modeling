@@ -7,6 +7,8 @@ Source link: https://towardsdatascience.com/topic-modeling-with-bert-779f7db187e
 * Step 2: use UMAP reduce dimensionality
 * Step 3: use HDBSCAN to form clusters
 
+Topic_modeling_BERTopic.ipynb
+
 ## 1. Preprocess
 * Import all the files
 * Get the section for "History of present illness" from each file
