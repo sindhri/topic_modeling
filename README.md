@@ -44,7 +44,7 @@ topic 11
 topic 17
 ['il', 'lasix', 'therapy', 'melanoma', 'disease', 'rca', 'post', 'coronary', 'soft', 'dilantin', 'high', 'mr', 'groin', 'lung', 'subcutaneous', 'erythema', 'despite', 'dose', 'stenting', 'plts']  
 
-<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/model14.png" width = "800">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img14.png" width = "800">
 
 
 topic 0
@@ -56,4 +56,4 @@ topic 17
 topic 9
 ['stones', 'stone', 'vt', 'headaches', 'onset', 'po', 'syndrome', 'ruq', 'mm', 'cholecystitis', 'large', 'crampy', 'days', 'volume', 'stool', 'hernia', 'report', 'non', 'pericholecystic', 'positional']  
 
-<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/model15.png" width = "800">
+<img src = "https://github.com/sindhri/topic_modeling/blob/main/img/img15.png" width = "800">
